@@ -6,54 +6,62 @@
     <link rel="stylesheet" href="Styles/style.css">
     <title>Adams: HTML, CSS, JS</title>
     
-    
+    <style>
+        main {display: flex; 
+            justify-content: space-between;
+        }
+        #Ordered_List {
+            color: rgb(134, 3, 134);
+        }
+        #Unordered_List {
+            color: #af4c6f;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="nav-links"> 
-                <ul> <!-- Unordered List -->
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="Input.html">Shape Form</a></li>
-                    <li><a href="Result.html">Shape Result</a></li>
-                </ul>
-            </div>
+            <ul> <!-- Unordered List -->
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Input.html">Shape Form</a></li>
+                <li><a href="Result.html">Shape Result</a></li>
+            </ul>
         </nav>
         <h1>Welcome to My Website</h1>
         <h2>This website displays code in HTML, CSS and JS.</h2>
     </header>
-    <main>
-        <ol>
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-        </ol>
-
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of the website.</p>
-        </section>
-        <section id="Unordered List">
-            <h2>Unordered List</h2>
-            <p>This is an Unordered List.</p>
-            <ul>
-                <li>First item</li>
-                <li>Second item</li>
-                <li>Third item</li>
-            </ul>
-        </section>
-        <section id="services">
-            <h2>Services</h2>
-            <p>Details about the services we offer can be found here.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with us through this section.</p>
-        </section>
-        <img src="bear.jpg" alt="A Brown Grizzly bear standing, wearing sunglasses.">
+    <main >
+        <div class="left">
+            <section id="home">
+                <h2>Home</h2>
+                <p>This is the home section of the website.</p>
+            </section>
+            <section id="Unordered_List">
+                <h2>Unordered List</h2>
+                <p>This is an Unordered List.</p>
+                <ul>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
+            </section>
+            <section id="Ordered_List">
+                <h2>Ordered List</h2>
+                <p>This is an Ordered List.</p>
+                <ol>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ol>
+            </section>
+        </div> <!-- End of left -->
+        <div class = "right">
+            <img src="bear.jpg" alt="A Brown Grizzly bear standing, wearing sunglasses.">
+        </div> <!-- End of right -->
     </main>
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <p>My Website</p>
     </footer>
     <script src="Scripts/site.js"></script>
 </body>
